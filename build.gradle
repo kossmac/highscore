@@ -35,4 +35,5 @@ jfx {
 
     // minimal requirement for jfxNative-task
     vendor = 'Dynamo Beuth'
+    jfxMainAppJarName = "highscore.jar"
 }
