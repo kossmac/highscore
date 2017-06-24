@@ -14,7 +14,8 @@ public class HighscoreTest extends javafx.application.Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/highscore.fxml"));
         primaryStage.setTitle("Highscore");
-        primaryStage.setScene(new Scene(root, 300, 250));
+        primaryStage.setScene(new Scene(root, 520, 550));
+        primaryStage.setResizable(false);
 
         primaryStage.show();
     }

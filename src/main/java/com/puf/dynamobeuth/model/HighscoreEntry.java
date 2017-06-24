@@ -1,34 +1,30 @@
 package com.puf.dynamobeuth.model;
 
-import javafx.beans.property.SimpleStringProperty;
-
 public class HighscoreEntry {
-    private final SimpleStringProperty name;
-    private final SimpleStringProperty score;
+    private String name, key;
+    private int score;
 
-    public HighscoreEntry() {
-        this("", "");
-    }
+    public HighscoreEntry() {}
 
-    public HighscoreEntry(String name, String score){
-        this.name = new SimpleStringProperty(name);
-        this.score = new SimpleStringProperty(score);
+    public HighscoreEntry(String name, int score){
+        this.name = name;
+        this.score = score;
     }
 
     public String getName() {
-        return name.get();
+        return this.name;
     }
 
-    public void setName(String name) {
-        this.name.set(name);
+    public String getKey() {
+        return key;
     }
 
-    public String getScore() {
-        return score.get();
+    public void setKey(String key) {
+        this.key = key;
     }
 
-    public void setScore(String score) {
-        this.score.set(score);
+    public int getScore() {
+        return this.score;
     }
 }
 
